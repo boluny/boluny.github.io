@@ -25,9 +25,6 @@
       </ul>
       </div>
 
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
-
           {% if site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -42,12 +39,10 @@
             </a>
           </li>
           {% endif %}
-        </ul>
-      </div>
 
       <div class="footer-col footer-col-3">
-          <p class="rss-subscribe"> <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS 订阅</a><span>|由Jekyll强力驱动</span></p>
-        <p>Copyright © 2013-2015 Bolun</p>
+          <p class="rss-subscribe copyright"> <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS 订阅</a><span>|由Jekyll强力驱动</span></p>
+        <p class="copyright">Copyright © 2013-2015 Bolun</p>
       </div>
     </div>
 
