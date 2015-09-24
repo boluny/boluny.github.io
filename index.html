@@ -4,15 +4,31 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">文章</h1>
+  <h1 class="page-heading">技术</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
+    {% if post.type == 'tech' %}
       <li>
         <span>{{ post.date | date: "%Y-%m-%d" }}</span>
          » 
           <a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">生活</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    {% if post.type == 'life' %}
+      <li>
+        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+         » 
+          <a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
     {% endfor %}
   </ul>
 </div>
