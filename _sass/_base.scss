@@ -120,6 +120,10 @@ blockquote {
     }
 }
 
+blockquote p {
+    margin-bottom: 5px;
+}
+
 /**
  * Wrapper
  */
@@ -171,4 +175,26 @@ blockquote {
             fill: $grey-color;
         }
     }
+}
+
+code {
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Courier New";
+    font-size: 15px;
+    line-height: 15px;
+    padding: 0 5px;
+    word-wrap: break-word;
+}
+
+pre code {
+    background-color: transparent;
+    border: medium none;
+    padding: 0;
+    word-wrap: normal;
+}
+
+strong {
+    font-weight: bold;
 }

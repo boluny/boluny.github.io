@@ -168,6 +168,12 @@
     padding: $spacing-unit 0;
 }
 
+/* text indent for chinese paragraph 
+.page-content p {
+    text-indent: 2em;
+}
+*/
+
 .page-heading {
     font-size: 20px;
 }
