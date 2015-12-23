@@ -52,11 +52,13 @@
 pre.prettyprint
 {
     border: 0px solid #888;
+    white-space: pre-wrap;
 }
 ol.linenums
 {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 1em; /* for the possible 3-digit line number */
 }
 .prettyprint {
     background: #000;
